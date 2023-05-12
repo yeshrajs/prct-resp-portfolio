@@ -1,9 +1,12 @@
+@import'config';
+@import 'menue';
+
 $primary-color:#444;
 $secondry-color:#eece1a;
 $show-home-image:true;
 $home-image: url("../img/workspace-1280538_1920.jpg");
 $background-opacity:0.5;
-@mixin easeOut{
+@mixin easeOut {
     transition: all 2.5s ease-out;
 }
 @mixin background{
