@@ -1,5 +1,5 @@
 
-$primary-color: #444;
+$primary-color:#444;
 $secondry-color: #eece1a;
 
 @mixin easeOut {
@@ -17,7 +17,7 @@ $secondry-color: #eece1a;
         width: 28px;
         height: 3px;
         margin: 0 0 5px;
-        background: #fff;
+        background: set-text-color($primary-color);
 
     }
     // rotate into x with menue lines
