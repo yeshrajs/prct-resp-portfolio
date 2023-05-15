@@ -1,10 +1,15 @@
 // wide screen
 @include mediaXl {
+    .projects {
+        grid-template-columns:repeat(4,1fr)
+    }
     }
 
 // desktops & laptops
 @include mediaLg {
-    
+    .projects{
+        grid-template-columns:repeat(3,1fr);
+    }
 }
 
 
@@ -43,6 +48,9 @@
 ;
 grid-template-column:1fr;
 }
+.projects{
+    grid-template-columns:repeat(2,1fr);
+}
        
     }
 
@@ -72,5 +80,8 @@ grid-template-column:1fr;
         transform:translate3d(100%,0,0);
 
 
+    }
+    .projects{
+        grid-template-columns:repeat(1fr);
     }
 }

@@ -145,8 +145,51 @@ margin-top:4rem;
     height:60px;
 }
 
+// my work
+#work{
+
+    .projects{
+        display:grid;
+        grid-gap: 20px;
+    grid-template-columns:repeat(3,1fr);
+      img{
+        width:100%;
+        border:3px $secondry-color solid;
+        &:hover{
+            opacity:0.5;
+            border-color:#fff;
+            @include easeOut;
+            
+        }
+      }
+    }
+    
+}
+
+// button style
+.btn{
+    display:block;
+    padding:0.5rem 1rem;
+    border:0;
+    width:100%;
+    margin-bottom:0.3rem;
+    &:hover{
+        background:$secondry-color;
+        color:set-text-color($secondry-color);
+    }
+}
+.btn-dark{
+    @extend .btn;
+background:darken($primary-color,50);
+color:white;
 
 
+}
+.btn-light{
+    @extend .btn;
+    background:lighten($primary-color,50);
+color:#333;
 
+}
 
 @import 'mobile';
