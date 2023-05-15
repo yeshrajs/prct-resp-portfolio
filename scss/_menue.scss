@@ -71,13 +71,14 @@ $secondry-color: #eece1a;
         &.show {
             // slide in from top
              transform: translate3d(0,0,0);
+
         }
     }
 
     // Branding-side
     &-brand {
         display: flex;
-        // flex-flow: column wrap;
+        flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         float: left;
@@ -104,7 +105,7 @@ $secondry-color: #eece1a;
 
     }
     .nav-item {
-        transform: translate3d(0,0,0);
+        transform: translate3d(0,-100%,0);
         @include easeOut;
 
         &.show {
