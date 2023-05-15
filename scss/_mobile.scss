@@ -1,18 +1,16 @@
 // wide screen
 @include mediaXl {
     .projects {
-        grid-template-columns:repeat(4,1fr)
-    }
-    }
-
-// desktops & laptops
-@include mediaLg {
-    .projects{
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
 }
 
-
+// desktops & laptops
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 // tablet & small laptop
 @include mediaMd {
@@ -25,41 +23,36 @@
         height: 30vh;
         flex-flow: row wrap;
         width: 100vw;
-        transform:translate3d(-100%,0,0 );
-.portrait{
-    width:200px;
-    height:200px;
+        transform: translate3d(-100%,0,0);
+        .portrait {
+            width: 200px;
+            height: 200px;
 
-}
-}    .menu-nav {
-    height: 70vh;
-    width: 100vw;
-    transform:translate3d(100%,0,0);
-
-
-}
-.about-info{
-    grid-template-areas:
-'bioimage'
-'bio'
-'job1'
-'job2'
-'job3'
-;
-grid-template-column:1fr;
-}
-.projects{
-    grid-template-columns:repeat(2,1fr);
-}
-       
+        }
     }
+    .menu-nav {
+        height: 70vh;
+        width: 100vw;
+        transform: translate3d(100%,0,0);
 
+    }
+    .about-info {
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+        grid-template-column: 1fr;
+    }
     
+
+        .projects {
+            grid-template-columns: repeat(2,1fr);
+        }
+    
+
+}
 
 // for mobile phones
 @include mediaSm {
-    #home .lg-heading {
-        font-size: 64px;
+    .lg-heading {
+        font-size: 54px;
         line-height: 1.2;
         padding-bottom: 2rem;
     }
@@ -67,21 +60,20 @@ grid-template-column:1fr;
         height: 30vh;
         flex-flow: row wrap;
         width: 100vw;
-        transform:translate3d(-100%,0,0 );
-.portrait{
-    width:150px;
-    height:150px;
-}
-       
+        transform: translate3d(-100%,0,0);
+        .portrait {
+            width: 150px;
+            height: 150px;
+        }
+
     }
     .menu-nav {
         height: 70vh;
         width: 100vw;
-        transform:translate3d(100%,0,0);
-
+        transform: translate3d(100%,0,0);
 
     }
-    .projects{
-        grid-template-columns:repeat(1fr);
+     .projects {
+        grid-template-columns: repeat(1,1fr);
     }
 }
